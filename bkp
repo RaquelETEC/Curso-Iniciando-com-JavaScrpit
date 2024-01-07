@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Raquel-ProgramaJS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1>Exibir qual valor é maior</h1>
+
+    <form name="Formulario" action="" method="post">
+        Digite o Numero 1 :<br> 
+        <input type="text" name="f_num1"><br />
+        Digite o Numero 2 : <br>
+        <input type="text" name="f_num2" /><br />
+        Digite o Numero 3 : <br>
+        <input type="text" name="f_num3" /><br />
+        <br>
+        <input type="button" name="btn_concatena" value="Enviar" onclick="maiornumero()" />
+        <input type="reset" name="btn_cancela" value="Cancelar" />
+    </form>
+
+    <script language="javascript">
+        <!--
+                var num1;
+                var num2;
+                var num3;
+
+                function maiornumero() {
+
+                    num1 = parseInt(document.Formulario.f_num1.value);
+                    num2 = parseInt(document.Formulario.f_num2.value);
+                    num3 = parseInt(document.Formulario.f_num3.value);
+
+                    if (num1 > num2 && num1 > num3) {
+                        window.alert('o número ' + num1 + ' é o maior de todos');
+                    } 
+                    else {
+                        window.alert('Algo deu errado');
+                    }
+
+                }
+        -->
+    </Script>
+
+</body>
+
+</html>

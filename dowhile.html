@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .FundoBranco {
+        height: 500px;
+        width: 50%;
+        background-color: rgb(255, 255, 255);
+        margin: 0 auto;
+    }
+</style>
+
+<head>
+    <title>Condicional Ternário</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+</head>
+
+<body style="font-family: Arial; text-align: center; background-color: pink">
+    <div class="FundoBranco">
+        <h1>Laços de Repetição</h1>
+        <h3> Do While</h3>
+        <script>
+            var js_qht;
+            var js_vht;
+            var js_inss;
+            var js_tdes;
+            var js_sb;
+            var js_resposta = true; 
+
+            do {
+
+                js_qht = parseFloat(window.prompt('Informe a Quantidade de Horas Trabalhadas/Mês: (135 a 180)', '00'));
+                js_vht = parseFloat(window.prompt('Informe o Valor da Hora  Trabalhada: (25 a 50)', '00'));
+                js_inss = parseFloat(window.prompt('Informe o Percentual de Desconto INSS: (5 a 15', '00'));
+
+                js_sb = js_vht * js_qht;
+                js_tdes = (js_inss/100) * js_sb; 
+                js_sl = js_sb - js_tdes; 
+
+                document.write('<p> <b> DEMONSTRATIVO PARA CÁCULO DO SALÁRIO LÍQUIDO </b>')
+
+                document.write('<p> Quantidade e horas trabalhadas (135 a 180) => <br>' + js_qht +'</b>')
+                if(js_qht > 180){
+                    document.write(' ... valor maximo execedido');
+                }
+                if(js_qht < 135){
+                    document.write('... Valor Mínimo inválido');
+                }
+
+                document.write('<p>Salário Bruto: ' + js_sb + '</p>');
+                document.write('<p>Desconto INSS: ' + js_tdes + '</p>');
+                document.write('<p>Salário Líquido: ' + js_sl + '</p>');
+
+                js_resposta = window.confirm('Deseja continuar?');
+            }
+            while(js_resposta === true);
+
+
+        </script>  
+ </div>
+</body>
+</html>

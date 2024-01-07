@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .FundoBranco {
+          height: 500px;
+          width: 50%;
+          background-color: rgb(255, 255, 255);
+          margin: 0 auto;
+        }
+        </style>
+<head>
+    <title>Condicional Ternário</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+</head>
+
+<body style="font-family: Arial; text-align: center; background-color:pink"></p>
+    <div class="FundoBranco">
+    <h1>Operador Ternário</h1>
+
+    
+    <form name="Formulario" action="" method="post">
+        Insira um número para começar:<br> 
+        <input type="number" name="f_num1"><br/>
+        <br>
+        <input type="button" name="btn_concatena" value="Enviar" onclick="Condicao()" />
+        <input type="reset" name="btn_cancela" value="Cancelar" />
+    </form>
+    <h3>DEFINIÇÃO E ATRIBUIÇÃO DE VARIÁVEIS</h3>
+    <P>var js_num :<b id="ternaroi1"> </b> (js_num recebe valor <b id="ternaroi2"> </b> ) </P>
+    <hr>
+    <p>Operador Ternário<b> (? :) </b> com os operadores relacionais (==, !=, <):  </p>
+    <br> js_num <b>==</b>  20 <b> ? </b> "SIM" <b>:</b> "NÃO" - Resposta => <b id="resultado1">  </b>
+    <br> js_num <b>!=</b>  20 <b> ? </b> "SIM" <b>:</b> "NÃO" - Resposta => <b id="resultado2">  </b>
+    <br> js_num <b><</b>   50 <b> ? </b> "SIM" <b>:</b> "NÃO" - Resposta => <b id="resultado3">  </b>
+
+    <hr>
+    <p>Operador Ternário<b> (? :) </b> com os EXPRESSÃO ARITIMÉTICA (+, -, * ):  </p>
+    <br> js_num <b>-</b>  20 <b> <b> =</b>  0 <b>  ? </b> "SIM" <b>:</b> "NÃO" - Resposta => <b id="resultado4">  </b>
+
+    </div>
+
+    <script language="javascript"> 
+      
+
+        function Condicao(){
+            num1 = parseInt(document.Formulario.f_num1.value);
+            subtracao = num1 - 20;
+            ternaroi1.innerHTML = num1 ;
+            ternaroi2.innerHTML = num1 ;
+
+
+            (num1 == 20) ? resultado1.innerHTML = 'SIM' : resultado1.innerHTML = 'NÃO' ;
+            (num1 != 20) ? resultado2.innerHTML = 'SIM' : resultado2.innerHTML = 'NÃO';
+            (num1 < 50) ? resultado3.innerHTML = 'SIM' : resultado3.innerHTML = 'NÃO';
+            (subtracao == 0) ? resultado4.innerHTML = 'SIM' : resultado4.innerHTML = 'NÃO';
+        }
+          
+        
+    </Script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .FundoBranco {
+        height: 500px;
+        width: 50%;
+        background-color: rgb(255, 255, 255);
+        margin: 0 auto;
+    }
+</style>
+
+<head>
+    <title>Condicional Ternário</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+</head>
+
+<body style="font-family: Arial; text-align: center; background-color: pink">
+    <div class="FundoBranco">
+        <h1>Laços de Repetição</h1>
+        <h3> FOR  🌷 </h3>
+
+        <form name="Formulario" action="" method="post">
+            Insira quantas vezes você quer que repita:<br> 
+            <input type="text" name="f_num1"><br/>
+            <br>
+            <input type="button" name="btn_concatena" value="Enviar" onclick="Condicao()" />
+            <input type="reset" name="btn_cancela" value="Cancelar" />
+        </form>
+       
+        <script>
+            function Condicao() {
+                var js_num; 
+                var x; 
+
+                x = parseInt(document.Formulario.f_num1.value);
+
+                for (js_num = 0; js_num <= x; js_num += 2) {
+                    document.write('Flor numero ' + js_num + ' 🌷 <br>');
+                }
+            }
+        </script>  
+ </div>
+</body>
+</html>
